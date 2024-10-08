@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Hello Bulma!</title>
+</head>
+<body>
+    <section class="section">
+        <main class="container">
+            <h1 class="title">Hello World</h1>
+
+            <button 
+                class="button" 
+                hx-get="/book"
+                hx-target="#books"
+            >List all books</button>
+            <div id="books"></div>
+        </main>
+    </section>
+</body>
+</html>
